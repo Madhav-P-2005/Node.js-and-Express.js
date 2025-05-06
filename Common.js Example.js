@@ -1,6 +1,5 @@
 // const {somefunction} = require("./Node");
 
-
 // somefunction()
 
 /*
@@ -12,14 +11,11 @@ hello
 
 */
 
+// 2nd Way :-
 
+const a = require("./Intro-To-Node.js");
 
-// 2nd Way :- 
-
-const a = require("./Node.js")
-
-console.log(a , "\n" ,__dirname , "\n",  __filename);
-
+console.log(a, "\n", __dirname, "\n", __filename);
 
 /*
 
@@ -31,12 +27,7 @@ Output :-
 
 */
 
-
-
-(function (exports , require , module , __filename , __dirname)
-{
+(function (exports, require, module, __filename, __dirname) {
   // Module code actually lives here .
-
   // Note :-  Node.js has a function where exports , require , module , filename and dirname can be used.
-
-})
+});

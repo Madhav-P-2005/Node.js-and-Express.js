@@ -1,10 +1,8 @@
-// 1st Way 
+// 1st Way
 
+import { someFunction } from "./Intro-To-Node.js";
 
-import { someFunction } from "./Node.js";
-
-someFunction()
-
+someFunction();
 
 /*
 
@@ -28,14 +26,11 @@ Fix It in 2 Easy Options :-
 
 */
 
-
-
 // 2nd Way
 
-import obj from "./Node.js";
+import obj from "./Intro-To-Node.js";
 
 console.log(obj);
-
 
 /* 
 
@@ -43,15 +38,11 @@ Output :-  { x: 5 , y: 7 }
 
 */
 
-
-
-
 // 3rd Way
 
-import obj2 from "./Node.js";
+import obj2 from "./Intro-To-Node.js";
 
 console.log(obj2);
-
 
 /*
 
