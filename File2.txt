@@ -1,0 +1,3 @@
+This is written using writeFile (async).
+ Appended this text 
+ This is a Promise Example
