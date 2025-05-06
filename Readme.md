@@ -1,11 +1,4 @@
-That's a great initiative — organizing and documenting your **Node.js learning journey** in your project’s `README.md`. It shows clarity, growth, and makes your GitHub repos more valuable to others too.
-
-Here’s a **clean, professional, and structured version** of your content formatted for a `README.md`. I’ve added some helpful formatting, sections, and Markdown styling to make it more readable and helpful to others:
-
----
-
-````markdown
-# 🚀 Node.js Learning Notes by Madhav P
+# 🚀 Node.js And Express.js -  A Complete Guide
 
 This repository contains my learning progress while exploring **Node.js**. I’m documenting commands, concepts, and server logic that I’ve worked on step-by-step.
 
@@ -13,19 +6,19 @@ This repository contains my learning progress while exploring **Node.js**. I’m
 
 ## 📦 NPM Basics
 
-| Command | Description |
-|--------|-------------|
-| `npm --version` | Check the installed version of npm |
-| `npm init` | Initialize a Node.js project and generate `package.json` |
-| `npm init -y` | Skip prompts and initialize with default values |
-| `npm install slugify` or `npm i slugify` | Install a package |
-| `npm i express jsonwebtoken` | Install multiple packages at once |
-| `npm install --save-dev nodemon` | Install nodemon as a dev dependency |
-| `npx nodemon Node.js` | Run with auto-reload (without global install) |
-| `node Node.js` | Run the file directly with Node.js |
-| `npm install -g nodemon` | Install nodemon globally |
-| `nodemon filename.js` | Run and watch a file globally |
-| `npm run dev` | Run dev script defined in `package.json` |
+| Command                                  | Description                                        |
+| ---------------------------------------- | -------------------------------------------------- |
+| `npm --version`                          | Check the installed version of npm                 |
+| `npm init`                               | Initialize a Node.js project (`package.json`)      |
+| `npm init -y`                            | Quick init with default values                     |
+| `npm install slugify` or `npm i slugify` | Install a single package                           |
+| `npm i express jsonwebtoken`             | Install multiple packages                          |
+| `npm install --save-dev nodemon`         | Install as a dev dependency                        |
+| `npx nodemon filename.js`                | Run with auto-reload (without global install)      |
+| `node filename.js`                       | Run directly with Node.js                          |
+| `npm install -g nodemon`                 | Install nodemon globally                           |
+| `nodemon filename.js`                    | Run and watch file using global nodemon            |
+| `npm run dev`                            | Run custom script (like `dev`) from `package.json` |
 
 ---
 
@@ -188,5 +181,3 @@ Next: I will learn **Express.js** and update this repo accordingly. Stay tuned!
 ---
 
 > ⭐ *If this helps you or you want to support my learning, drop a star and follow my progress!*
-
-```
