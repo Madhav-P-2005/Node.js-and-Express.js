@@ -1,0 +1,1 @@
+This is a app.use() example where it shows the file public if accessed in this way :- //localhost:3000/blog/o?node=dark&regin=in

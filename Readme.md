@@ -1,35 +1,37 @@
-# 🚀 Node.js And Express.js -  A Complete Guide
+## 🚀 Node.js And Express.js – A Complete Guide
 
 This repository contains my learning progress while exploring **Node.js**. I’m documenting commands, concepts, and server logic that I’ve worked on step-by-step.
 
----
-
-## 📦 NPM Basics
-
-| Command                                  | Description                                        |
-| ---------------------------------------- | -------------------------------------------------- |
-| `npm --version`                          | Check the installed version of npm                 |
-| `npm init`                               | Initialize a Node.js project (`package.json`)      |
-| `npm init -y`                            | Quick init with default values                     |
-| `npm install slugify` or `npm i slugify` | Install a single package                           |
-| `npm i express jsonwebtoken`             | Install multiple packages                          |
-| `npm install --save-dev nodemon`         | Install as a dev dependency                        |
-| `npx nodemon filename.js`                | Run with auto-reload (without global install)      |
-| `node filename.js`                       | Run directly with Node.js                          |
-| `npm install -g nodemon`                 | Install nodemon globally                           |
-| `nodemon filename.js`                    | Run and watch file using global nodemon            |
-| `npm run dev`                            | Run custom script (like `dev`) from `package.json` |
+> ✅ Now extended with **Express.js** for scalable server-side applications.
 
 ---
 
-## 🧩 Scripts in `package.json`
+### 📦 NPM Basics
+
+| Command                              | Description                                    |
+| ------------------------------------ | ---------------------------------------------- |
+| npm --version                        | Check the installed version of npm             |
+| npm init                             | Initialize a Node.js project (package.json)    |
+| npm init -y                          | Quick init with default values                 |
+| npm install slugify or npm i slugify | Install a single package                       |
+| npm i express jsonwebtoken           | Install multiple packages                      |
+| npm install --save-dev nodemon       | Install as a dev dependency                    |
+| npx nodemon filename.js              | Run with auto-reload (without global install)  |
+| node filename.js                     | Run directly with Node.js                      |
+| npm install -g nodemon               | Install nodemon globally                       |
+| nodemon filename.js                  | Run and watch file using global nodemon        |
+| npm run dev                          | Run custom script (like dev) from package.json |
+
+---
+
+### 🧩 Scripts in package.json
 
 ```json
 "scripts": {
   "start": "node Node.js",
   "dev": "nodemon Node.js"
 }
-````
+```
 
 Now you can run:
 
@@ -38,14 +40,14 @@ Now you can run:
 
 ---
 
-## 🧠 What is `npx`?
+### 🧠 What is npx?
 
 `npx` allows running binaries from `node_modules/.bin/` without installing them globally.
-Example: `npx nodemon Node.js` looks for `nodemon` in local dependencies and executes it.
+Example: `npx nodemon Node.js`
 
 ---
 
-## 🔁 NVM – Node Version Manager
+### 🔁 NVM – Node Version Manager
 
 Use NVM to manage multiple Node.js versions:
 
@@ -56,7 +58,7 @@ nvm use 16
 
 ---
 
-## 🛠 Useful npm Commands
+### 🛠 Useful npm Commands
 
 * `npm config get prefix` → Shows global npm path
 * `npm cache clean --force` → Clean npm cache
@@ -64,27 +66,25 @@ nvm use 16
 
 ---
 
-## 🌐 HTTP Methods & Status Codes
+### 🌐 HTTP Methods & Status Codes
 
-HTTP methods you’ll use in APIs:
-
-| Method   | Purpose        |
-| -------- | -------------- |
-| `GET`    | Retrieve data  |
-| `POST`   | Send data      |
-| `PUT`    | Full update    |
-| `PATCH`  | Partial update |
-| `DELETE` | Delete data    |
+| Method | Purpose        |
+| ------ | -------------- |
+| GET    | Retrieve data  |
+| POST   | Send data      |
+| PUT    | Full update    |
+| PATCH  | Partial update |
+| DELETE | Delete data    |
 
 📚 [HTTP Status Codes – MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)
 
 ---
 
-## ⚙️ Node.js Server Logic (Basic)
+### ⚙️ Node.js Server Logic (Basic)
 
-Server’s main role is to **process data** between **frontend** and **database**. It does **not store data** permanently.
+Server processes data between **frontend** and **database** but does **not store** it permanently.
 
-Common commands:
+Run commands:
 
 ```bash
 node server.js
@@ -92,7 +92,7 @@ npm start
 npm run dev
 ```
 
-Add custom script in package.json:
+Add custom script in `package.json`:
 
 ```json
 "scripts": {
@@ -106,78 +106,73 @@ Run it with:
 npm run Madhav
 ```
 
-Stop the server with:
-
-```bash
-Ctrl + C
-```
+Stop the server with `Ctrl + C`.
 
 ---
 
-## 🔄 Why Use Nodemon?
+### 🔄 Why Use Nodemon?
 
-Instead of restarting the server manually after every change:
+Auto-reloads the server on changes.
 
-1. Install it:
-
-   ```bash
-   npm i nodemon
-   ```
-
-2. Use it in scripts:
-
-   ```json
-   "dev": "nodemon server.js"
-   ```
-
-3. Run it:
-
-   ```bash
-   npm run dev
-   ```
-
-It will auto-restart your server when changes are detected.
+1. Install: `npm i nodemon`
+2. Script: `"dev": "nodemon server.js"`
+3. Run: `npm run dev`
 
 ---
 
-## 🌐 Explore npm Packages
+### 🌐 Explore npm Packages
 
-You can explore useful packages at [https://www.npmjs.com](https://www.npmjs.com)
+Visit: [https://www.npmjs.com](https://www.npmjs.com)
 
 ---
 
-## 📁 Project Transfer Tip
+### 📁 Project Transfer Tip
 
-If you share or clone the project:
+If you share/clone the project:
 
-* Delete `node_modules/` and `package-lock.json` (to save space)
+* Delete `node_modules/` and `package-lock.json`
 * Run `npm install` to regenerate them
 
 ---
 
-## 🧵 Network Tools
+### 🧵 Network Tools
 
-* `netstat -ano` → See all available localhost ports
-
----
-
-## 🧬 TCP vs UDP (Bonus Note)
-
-* **TCP**: Reliable, connection-oriented, slower, continuous handshake.
-* **UDP**: Fast, connection-less, used for chunks, no guarantee of delivery.
+* `netstat -ano` → View available localhost ports
 
 ---
 
-## 📚 Upcoming Learning
+### 🧬 TCP vs UDP (Bonus Note)
 
-> I'm currently exploring **advanced Node.js server handling** like:
-
-* User **Sign In / Sign Out**
-* Handling **POST, DELETE, GET** in real APIs
-* Error handling, routing, and more...
-
-Next: I will learn **Express.js** and update this repo accordingly. Stay tuned!
+| Protocol | Details                                                 |
+| -------- | ------------------------------------------------------- |
+| TCP      | Reliable, connection-based, slower, handshake mechanism |
+| UDP      | Faster, connection-less, no delivery guarantee          |
 
 ---
 
-> ⭐ *If this helps you or you want to support my learning, drop a star and follow my progress!*
+## ⚡️ New: Express.js Integration
+
+> Continuing from Node.js, now exploring **Express.js** — a lightweight, unopinionated framework for building robust APIs and web servers.
+
+### 🔹 Express.js Highlights:
+
+* Simplifies routing, request handling, and server logic
+* Supports middleware for reusable logic (auth, validation, etc.)
+* Easily integrates with MongoDB, JWT, templating engines, and more
+* Clean URL-based routing for scalable REST APIs
+* Modular structure using routers and controllers
+* Custom error handling and response formatting
+
+### ✅ In Progress:
+
+* Creating RESTful APIs using Express
+* Implementing middleware and modular route handling
+* Exploring request-response lifecycle
+* Handling CRUD operations
+* Preparing for MongoDB integration & JWT-based authentication
+
+---
+
+> 🔄 *Stay tuned as I continue to build real-time projects and integrate Express.js fully with database and authentication systems.*
+
+⭐ *If you find this repo useful or want to support my learning journey, drop a star and follow along!*
